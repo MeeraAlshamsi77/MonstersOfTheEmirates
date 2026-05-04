@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>وحوش الإمارات | Monsters of the Emirates</title>
+
+  <!-- Google Fonts: cinematic, elegant, not cheesy -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;600;700;800&family=Noto+Naskh+Arabic:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       GRAIN OVERLAY — persistent film noise texture
+  ═══════════════════════════════════════════ -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════
+       CUSTOM CURSOR
+  ═══════════════════════════════════════════ -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo arabic-text">وحوش الإمارات</span>
+      <div class="nav-links">
+        <a href="#logline">Logline</a>
+        <a href="#concept">Concept</a>
+        <a href="#characters">Characters</a>
+        <a href="#episodes">Episodes</a>
+        <a href="#visual">Visual</a>
+        <a href="#anthology">Anthology</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+  SECTION 1 — HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+
+    <!-- Simulated CCTV scanline effect -->
+    <div class="cctv-overlay" aria-hidden="true">
+      <div class="cctv-scanline"></div>
+      <div class="cctv-corner top-left">REC ●</div>
+      <div class="cctv-corner top-right">CAM 04 — ABU DHABI</div>
+      <div class="cctv-corner bottom-left" id="cctv-time">00:00:00</div>
+      <div class="cctv-corner bottom-right">MALL OF THE EMIRATES — B2</div>
+    </div>
+
+    <!-- Background: layered dark gradient suggesting empty corridor -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-corridor-line"></div>
+      <div class="hero-corridor-line"></div>
+      <div class="hero-corridor-line"></div>
+      <div class="silhouette" aria-hidden="true"></div>
+    </div>
+
+    <!-- Hero content -->
+    <div class="hero-content">
+      <p class="hero-eyebrow fade-in-up" style="animation-delay:0.2s">A Psychological Crime Anthology Series</p>
+
+      <h1 class="hero-title fade-in-up" style="animation-delay:0.5s">
+        <span class="arabic-title">وحوش الإمارات</span>
+        <span class="title-divider">—</span>
+        <span class="english-title">Monsters of the Emirates</span>
+      </h1>
+
+      <h2 class="hero-season fade-in-up" style="animation-delay:0.8s">
+        <span class="arabic-season">شَبَح الريم</span>
+        <span class="season-sep">/</span>
+        <span>Season One: Ghost of Reem</span>
+      </h2>
+
+      <p class="hero-tagline fade-in-up" style="animation-delay:1.1s">
+        "The UAE has its own monsters."
+      </p>
+
+      <a href="#logline" class="hero-cta fade-in-up" style="animation-delay:1.4s">
+        <span>View the Pitch</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M8 1v14M1 8l7 7 7-7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+  SECTION 2 — LOGLINE
+  ═══════════════════════════════════════════ -->
+  <section class="section logline-section" id="logline">
+    <div class="container">
+
+      <!-- Case file label -->
+      <div class="case-label reveal">
+        <span class="case-num">FILE 001</span>
+        <span class="case-dash">——</span>
+        <span>LOGLINE</span>
+      </div>
+
+      <blockquote class="logline-text reveal">
+        In Abu Dhabi, a city defined by safety and silence, a masked woman commits a calculated murder inside a public mall, forcing a determined Emirati investigator to uncover how emotional invisibility, personal humiliation, and unseen digital influence can transform an ordinary woman into a figure the entire nation fears.
+      </blockquote>
+
+      <!-- Decorative elements suggesting a case board -->
+      <div class="logline-meta reveal">
+        <div class="meta-item">
+          <span class="meta-label">Format</span>
+          <span class="meta-value">Limited Series · 6 Episodes</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Genre</span>
+          <span class="meta-value">Psychological Crime Thriller</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Setting</span>
+          <span class="meta-value">Abu Dhabi, UAE — Present Day</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Language</span>
+          <span class="meta-value">Arabic · English</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+  SECTION 3 — SERIES CONCEPT
+  ═══════════════════════════════════════════ -->
+  <section class="section concept-section" id="concept">
+    <div class="container">
+
+      <div class="case-label reveal">
+        <span class="case-num">FILE 002</span>
+        <span class="case-dash">——</span>
+        <span>SERIES CONCEPT</span>
+      </div>
+
+      <div class="concept-grid">
+        <div class="concept-left reveal">
+          <h2 class="section-heading">
+            What does it mean<br/>
+            <em>to be unseen?</em>
+          </h2>
+        </div>
+
+        <div class="concept-right reveal">
+          <p class="concept-body">
+            <strong>وحوش الإمارات / Monsters of the Emirates</strong> is a psychological crime anthology series rooted in the UAE — in its architecture, its silence, its contradictions. Each season excavates a different kind of monster: not supernatural, not imported, but local. Born from suppression, rumor, social pressure, and the specific texture of Gulf memory.
+          </p>
+          <p class="concept-body">
+            Season One — <strong>شَبَح الريم / Ghost of Reem</strong> — is inspired by the 2014 Ghost of Reem case in Abu Dhabi. But the series is not a true-crime retelling. It asks a different question entirely: <em>how does someone become invisible before becoming dangerous?</em> The crime is almost incidental. The investigation is into everything that preceded it.
+          </p>
+          <p class="concept-body">
+            This is a show about what happens when cities are designed for safety but not for feeling. When presence is enforced but personhood is not. When the digital world offers the only mirror someone has ever been given.
+          </p>
+        </div>
+      </div>
+
+      <!-- Thematic tags -->
+      <div class="theme-tags reveal">
+        <span class="tag">Invisibility</span>
+        <span class="tag">Emotional Repression</span>
+        <span class="tag">Digital Influence</span>
+        <span class="tag">Gulf Identity</span>
+        <span class="tag">Surveillance</span>
+        <span class="tag">Silence as Violence</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+  SECTION 4 — CHARACTERS
+  ═══════════════════════════════════════════ -->
+  <section class="section characters-section" id="characters">
+    <div class="container">
+
+      <div class="case-label reveal">
+        <span class="case-num">FILE 003</span>
+        <span class="case-dash">——</span>
+        <span>PERSONS OF INTEREST</span>
+      </div>
+
+      <h2 class="section-heading center reveal">The People Inside the Frame</h2>
+
+      <!-- Character cards grid -->
+      <div class="characters-grid">
+
+        <!-- Mariam -->
+        <div class="char-card reveal" data-role="investigator">
+          <div class="char-card-inner">
+            <div class="char-header">
+              <div class="char-id">C-01</div>
+              <div class="char-status status-active">ACTIVE</div>
+            </div>
+            <div class="char-photo-placeholder">
+              <div class="char-silhouette investigator-silhouette"></div>
+            </div>
+            <div class="char-body">
+              <h3 class="char-name">Mariam Al Nuaimi</h3>
+              <p class="char-role">Emirati Investigator</p>
+              <div class="char-divider"></div>
+              <p class="char-desc">
+                Quiet, observant, and methodical. Mariam reads what people avoid saying — the pauses, the redirections, the things omitted from official reports. She does not chase evidence. She waits for it to reveal itself.
+              </p>
+              <div class="char-arc">
+                <span class="arc-label">Arc</span>
+                <span class="arc-text">Solving a case → confronting what the case reveals about the world she inhabits</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alaa -->
+        <div class="char-card reveal char-featured" data-role="subject">
+          <div class="char-card-inner">
+            <div class="char-header">
+              <div class="char-id">C-02</div>
+              <div class="char-status status-subject">SUBJECT</div>
+            </div>
+            <div class="char-photo-placeholder">
+              <div class="char-silhouette alaa-silhouette"></div>
+              <div class="char-mask-overlay"></div>
+            </div>
+            <div class="char-body">
+              <h3 class="char-name">Alaa Al Hashemi</h3>
+              <p class="char-role">The Woman Behind the Mask</p>
+              <div class="char-divider"></div>
+              <p class="char-desc">
+                Emotionally restrained. Perfectly ordinary by every visible measure. She has learned to occupy space without being acknowledged in it — a skill she has refined until it became something else entirely.
+              </p>
+              <div class="char-arc">
+                <span class="arc-label">Arc</span>
+                <span class="arc-text">Invisibility → validation → manipulation → danger</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khalid -->
+        <div class="char-card reveal" data-role="secondary">
+          <div class="char-card-inner">
+            <div class="char-header">
+              <div class="char-id">C-03</div>
+              <div class="char-status status-watch">WATCH</div>
+            </div>
+            <div class="char-photo-placeholder">
+              <div class="char-silhouette khalid-silhouette"></div>
+            </div>
+            <div class="char-body">
+              <h3 class="char-name">Khalid Al Hashemi</h3>
+              <p class="char-role">Alaa's Brother</p>
+              <div class="char-divider"></div>
+              <p class="char-desc">
+                Protective in the way that forecloses. He monitors Alaa's behavior with the attention of surveillance but without the understanding of intimacy. He watches and never sees.
+              </p>
+              <div class="char-arc">
+                <span class="arc-label">Arc</span>
+                <span class="arc-text">Guardian → complicit absence → reckoning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ibolya -->
+        <div class="char-card reveal" data-role="victim">
+          <div class="char-card-inner">
+            <div class="char-header">
+              <div class="char-id">C-04</div>
+              <div class="char-status status-victim">VICTIM</div>
+            </div>
+            <div class="char-photo-placeholder">
+              <div class="char-silhouette ibolya-silhouette"></div>
+            </div>
+            <div class="char-body">
+              <h3 class="char-name">Ibolya Ryan</h3>
+              <p class="char-role">The Victim</p>
+              <div class="char-divider"></div>
+              <p class="char-desc">
+                Warm. Ordinary in the best sense of the word. Her life — her habits, her relationships, her small routines — exists in the series as a reminder of what was interrupted. She is not a prop. She is a life.
+              </p>
+              <div class="char-arc">
+                <span class="arc-label">Function</span>
+                <span class="arc-text">Anchors the audience in the human cost of invisibility rendered violent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yousef -->
+        <div class="char-card reveal char-ghost" data-role="unknown">
+          <div class="char-card-inner">
+            <div class="char-header">
+              <div class="char-id">C-05</div>
+              <div class="char-status status-unknown">UNKNOWN</div>
+            </div>
+            <div class="char-photo-placeholder">
+              <div class="char-silhouette yousef-silhouette">
+                <div class="signal-lines">
+                  <div class="signal-line"></div>
+                  <div class="signal-line"></div>
+                  <div class="signal-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="char-body">
+              <h3 class="char-name">Yousef</h3>
+              <p class="char-role">The Voice — Digital Presence</p>
+              <div class="char-divider"></div>
+              <p class="char-desc">
+                Not fully real. A presence assembled from messages, accounts, and carefully curated influence. Yousef says the things Alaa has never been allowed to hear. He is the first voice to make her feel found.
+              </p>
+              <div class="char-arc">
+                <span class="arc-label">Twist</span>
+                <span class="arc-text">Yousef is not one person — he is a network</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /characters-grid -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+  SECTION 5 — EPISODE TIMELINE
+  ═══════════════════════════════════════════ -->
+  <section class="section episodes-section" id="episodes">
+    <div class="container">
+
+      <div class="case-label reveal">
+        <span class="case-num">FILE 004</span>
+        <span class="case-dash">——</span>
+        <span>SEASON ONE — EPISODE BREAKDOWN</span>
+      </div>
+
+      <h2 class="section-heading center reveal">Six Fragments of a Life Unseen</h2>
+
+      <!-- Episode timeline -->
+      <div class="episodes-timeline">
+
+        <div class="episode-item reveal" data-ep="01">
+          <div class="ep-marker">
+            <div class="ep-dot"></div>
+            <div class="ep-line"></div>
+          </div>
+          <div class="ep-content">
+            <div class="ep-header">
+              <span class="ep-num">Episode 01</span>
+              <span class="ep-status">INCIDENT RECORDED</span>
+            </div>
+            <h3 class="ep-title">The Footage</h3>
+            <p class="ep-desc">The mall attack. CCTV. A masked figure, precise and unhurried. Investigator Mariam Al Nuaimi is assigned the case and realizes within hours: this was not impulsive. This was planned — meticulously, quietly, over time.</p>
+          </div>
+        </div>
+
+        <div class="episode-item reveal" data-ep="02">
+          <div class="ep-marker">
+            <div class="ep-dot"></div>
+            <div class="ep-line"></div>
+          </div>
+          <div class="ep-content">
+            <div class="ep-header">
+              <span class="ep-num">Episode 02</span>
+              <span class="ep-status">BACKGROUND</span>
+            </div>
+            <h3 class="ep-title">Invisible</h3>
+            <p class="ep-desc">We enter Alaa's life — before the mask. Her routines, her silences, her emotional erasure across years. The camera watches her the way the world never did. We see the preparation hiding in plain sight.</p>
+          </div>
+        </div>
+
+        <div class="episode-item reveal" data-ep="03">
+          <div class="ep-marker">
+            <div class="ep-dot"></div>
+            <div class="ep-line"></div>
+          </div>
+          <div class="ep-content">
+            <div class="ep-header">
+              <span class="ep-num">Episode 03</span>
+              <span class="ep-status">NEW SUBJECT</span>
+            </div>
+            <h3 class="ep-title">The Voice</h3>
+            <p class="ep-desc">Yousef appears. Messages, late at night. A digital presence that knows exactly what Alaa needed to hear. Mariam begins to trace the communications — and finds something she cannot immediately name.</p>
+          </div>
+        </div>
+
+        <div class="episode-item reveal" data-ep="04">
+          <div class="ep-marker">
+            <div class="ep-dot"></div>
+            <div class="ep-line"></div>
+          </div>
+          <div class="ep-content">
+            <div class="ep-header">
+              <span class="ep-num">Episode 04</span>
+              <span class="ep-status">ESCALATION</span>
+            </div>
+            <h3 class="ep-title">The Pattern</h3>
+            <p class="ep-desc">A second incident surfaces, connected to the first. The case expands. Mariam realizes she is not investigating one woman's breakdown — she is looking at something structural, something that has been operating quietly for a long time.</p>
+          </div>
+        </div>
+
+        <div class="episode-item reveal" data-ep="05">
+          <div class="ep-marker">
+            <div class="ep-dot"></div>
+            <div class="ep-line"></div>
+          </div>
+          <div class="ep-content">
+            <div class="ep-header">
+              <span class="ep-num">Episode 05</span>
+              <span class="ep-status">CLASSIFIED</span>
+            </div>
+            <h3 class="ep-title">Yousef</h3>
+            <p class="ep-desc">
+              <span class="spoiler-tag">TWIST</span>
+              Yousef is not one person. He is a network — accounts, voices, and coordinated influence operating across multiple targets. The question shifts: was Alaa a participant or a victim?
+            </p>
+          </div>
+        </div>
+
+        <div class="episode-item reveal" data-ep="06">
+          <div class="ep-marker">
+            <div class="ep-dot"></div>
+            <!-- No line after last episode -->
+          </div>
+          <div class="ep-content">
+            <div class="ep-header">
+              <span class="ep-num">Episode 06</span>
+              <span class="ep-status">FINAL</span>
+            </div>
+            <h3 class="ep-title">Unmasked</h3>
+            <p class="ep-desc">Alaa is arrested. The nation sees her face for the first time. But the influence does not end. Mariam closes the file and opens another. Somewhere, a new voice is beginning to speak — and someone is beginning to listen.</p>
+          </div>
+        </div>
+
+      </div><!-- /episodes-timeline -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+  SECTION 6 — VISUAL STYLE
+  ═══════════════════════════════════════════ -->
+  <section class="section visual-section" id="visual">
+    <div class="container">
+
+      <div class="case-label reveal">
+        <span class="case-num">FILE 005</span>
+        <span class="case-dash">——</span>
+        <span>VISUAL LANGUAGE</span>
+      </div>
+
+      <h2 class="section-heading center reveal">The Aesthetics of Stillness</h2>
+      <p class="section-subhead center reveal">Tension built not from violence, but from what the frame refuses to show.</p>
+
+      <!-- Visual style cards -->
+      <div class="visual-grid">
+
+        <div class="visual-card reveal">
+          <div class="visual-icon">
+            <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="4" y="8" width="32" height="24" rx="1" stroke="currentColor" stroke-width="1.2"/>
+              <circle cx="20" cy="20" r="5" stroke="currentColor" stroke-width="1.2"/>
+              <circle cx="8" cy="12" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h4>CCTV Gaze</h4>
+          <p>The camera watches from above, from the corner, from the wrong angle. Footage feels observed, not directed. Grain, timestamp overlays, the coldness of surveillance infrastructure.</p>
+        </div>
+
+        <div class="visual-card reveal">
+          <div class="visual-icon">
+            <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <path d="M4 20h32M20 4v32" stroke="currentColor" stroke-width="0.8" stroke-dasharray="2 3"/>
+              <rect x="10" y="10" width="20" height="20" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M10 30L30 10" stroke="currentColor" stroke-width="0.6"/>
+            </svg>
+          </div>
+          <h4>Mall Corridors</h4>
+          <p>Bright, climate-controlled, beautiful — and profoundly indifferent. Marble floors that reflect everything. Wide corridors that make individuals small. Public space as the site of private collapse.</p>
+        </div>
+
+        <div class="visual-card reveal">
+          <div class="visual-icon">
+            <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <path d="M20 4C11 4 4 11 4 20s7 16 16 16 16-7 16-16S29 4 20 4z" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M8 20h24M20 8v24" stroke="currentColor" stroke-width="0.6" stroke-dasharray="1 2"/>
+            </svg>
+          </div>
+          <h4>Empty Roads at Night</h4>
+          <p>Abu Dhabi after midnight. Wide highways built for millions, traversed by one. Streetlight cones. The hum of air conditioning from dark windows. Vastness as loneliness.</p>
+        </div>
+
+        <div class="visual-card reveal">
+          <div class="visual-icon">
+            <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="13" y="4" width="14" height="26" rx="2" stroke="currentColor" stroke-width="1.2"/>
+              <rect x="15" y="28" width="10" height="2" rx="1" fill="currentColor" opacity="0.4"/>
+              <rect x="16" y="8" width="8" height="12" rx="0.5" stroke="currentColor" stroke-width="0.8"/>
+            </svg>
+          </div>
+          <h4>Phone Glow</h4>
+          <p>The blue light of a screen in a dark room. Notification sounds. The intimacy of a message received at 2am. The digital world rendered as the only world that sees her.</p>
+        </div>
+
+        <div class="visual-card reveal">
+          <div class="visual-icon">
+            <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <path d="M4 4l32 32M4 36L36 4" stroke="currentColor" stroke-width="0.6" opacity="0.4"/>
+              <path d="M20 4v32" stroke="currentColor" stroke-width="1.2"/>
+              <ellipse cx="20" cy="20" rx="12" ry="16" stroke="currentColor" stroke-width="0.8"/>
+            </svg>
+          </div>
+          <h4>Reflections & Glass</h4>
+          <p>Doubled images. A face in a shop window. A figure reflected in elevator doors. The show's subjects never appear straightforwardly — always mediated, always partially hidden.</p>
+        </div>
+
+        <div class="visual-card reveal">
+          <div class="visual-icon">
+            <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <path d="M20 36V8" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 14l8-10 8 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4>Black Abaya Silhouette</h4>
+          <p>A figure in the frame. Unidentifiable by design. Not menacing — ordinary. The horror of the series lives here: in how easily she disappeared into visibility.</p>
+        </div>
+
+      </div>
+
+      <!-- Comparables -->
+      <div class="comparables reveal">
+        <div class="comp-label">In the tradition of ——</div>
+        <div class="comp-list">
+          <span class="comp-item">Mindhunter</span>
+          <span class="comp-sep">·</span>
+          <span class="comp-item">The Killing</span>
+          <span class="comp-sep">·</span>
+          <span class="comp-item">Mare of Easttown</span>
+          <span class="comp-sep">·</span>
+          <span class="comp-item">Sharp Objects</span>
+          <span class="comp-sep">·</span>
+          <span class="comp-item">True Detective S1</span>
+        </div>
+        <div class="comp-note">Distinct from all in its Gulf specificity, its Arabic cultural texture, and its centering of invisibility as a societal condition rather than an individual pathology.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+  SECTION 7 — ANTHOLOGY FUTURE
+  ═══════════════════════════════════════════ -->
+  <section class="section anthology-section" id="anthology">
+    <div class="container">
+
+      <div class="case-label reveal">
+        <span class="case-num">FILE 006</span>
+        <span class="case-dash">——</span>
+        <span>THE ANTHOLOGY — FUTURE SEASONS</span>
+      </div>
+
+      <h2 class="section-heading reveal">More Monsters.<br/>More Emirates.</h2>
+
+      <p class="anthology-intro reveal">
+        وحوش الإمارات is designed to run as long as the UAE has stories it has not yet told — which is to say, indefinitely. Each season introduces a new monster: a new case, a new protagonist, a new excavation of Emirati fear, memory, and social pressure.
+      </p>
+
+      <div class="seasons-grid">
+
+        <div class="season-card current reveal">
+          <div class="season-num">S01</div>
+          <h4>شَبَح الريم<br/><span>Ghost of Reem</span></h4>
+          <p>Emotional invisibility. Digital manipulation. A masked woman in a crowded mall. The horror of being unseen.</p>
+          <div class="season-badge">NOW</div>
+        </div>
+
+        <div class="season-card future reveal">
+          <div class="season-num">S02</div>
+          <h4>روح الصحراء<br/><span>Spirit of the Desert</span></h4>
+          <p>Desert folklore meets modern paranoia. A rural Emirati family, old land, and a presence that has no name — yet everyone in the village knows its shape.</p>
+          <div class="season-badge future-badge">NEXT</div>
+        </div>
+
+        <div class="season-card future reveal">
+          <div class="season-num">S03</div>
+          <h4>أسرار العائلة<br/><span>Family Secrets</span></h4>
+          <p>A wealthy Abu Dhabi family's patriarch dies under ambiguous circumstances. Three siblings. Three versions of a life. One truth no one will speak aloud.</p>
+          <div class="season-badge future-badge">DEVELOPMENT</div>
+        </div>
+
+        <div class="season-card future reveal">
+          <div class="season-num">S04</div>
+          <h4>الضغط الاجتماعي<br/><span>Social Pressure</span></h4>
+          <p>An Emirati woman who seems to have everything — the marriage, the home, the appearance. And the slow violence of a life lived entirely for others.</p>
+          <div class="season-badge future-badge">DEVELOPMENT</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+  SECTION 8 — FINAL / CLOSING
+  ═══════════════════════════════════════════ -->
+  <section class="section closing-section" id="closing">
+
+    <!-- Final atmospheric background -->
+    <div class="closing-bg" aria-hidden="true">
+      <div class="closing-light"></div>
+    </div>
+
+    <div class="container closing-content">
+      <div class="closing-file-mark reveal">CLASSIFIED — RESTRICTED ACCESS</div>
+      <h2 class="closing-statement reveal">
+        "Not every monster<br/>is supernatural.<br/>
+        <em>Some are simply unseen.</em>"
+      </h2>
+      <div class="closing-arabic reveal arabic-text">
+        ليس كل الوحوش خارقاً للطبيعة.<br/>
+        بعضها ببساطة غير مرئي.
+      </div>
+      <div class="closing-divider reveal"></div>
+      <p class="closing-series reveal">وحوش الإمارات / Monsters of the Emirates</p>
+      <p class="closing-credits reveal">A Psychological Crime Anthology Series · Limited Series · 6 Episodes · Season One: Ghost of Reem</p>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+  FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="arabic-text">وحوش الإمارات</span>
+      <span class="footer-sep">·</span>
+      <span>TV Pitch Presentation</span>
+      <span class="footer-sep">·</span>
+      <span>MENASA Series</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
